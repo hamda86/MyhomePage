@@ -1,0 +1,103 @@
+/* =================
+  WRITE YOUR CSS HERE.
+  Check the ⌄ for help with formatting and validating your code.
+  You must write some CSS to complete this challenge.
+   ===================
+*/
+
+
+
+html,
+  body{
+    margin: 0;
+    height: 0;
+    scroll-behavior: smooth;
+    font:monospace;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC););
+}
+
+ p{
+  font-family: monospace;
+   font-size:16px;
+   text-align: center;
+    margin: 4px;
+}
+
+.image {
+ align: center;
+   width:400px;
+   height:400px;
+  margin: auto;
+  border: 5px solid #555;
+  
+ }
+
+.video{
+  
+  align: center;
+   width:560px;
+   height:315px;
+  margin: auto;
+  border: 5px solid #555;
+  
+}
+
+
+  header {
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.25em;
+    text-align: center;
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+h2{
+  text-align: center;
+  padding: 0.5em;
+}
+
+  footer {
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors { display:none }
