@@ -54,6 +54,16 @@ The therapeutic act of looking after another life brings me joy. It reminds me t
  <textarea id=feedback name=feedback placeholder="Comment"></textarea></footer></html>
 
 <script>
+   let currentHour = prompt("What is the current hour?");
+      if (currentHour < 12) {
+        alert("Good morning");
+      } else {
+        if (currentHour > 18) {
+          alert("Good evening");
+        } else {
+          alert("Good afternoon");
+        }
+      }
   document.getElementById('feedback').addEventListener('click', (event) => {
   event.target.style.backgroundColor = '#ffff66';
   });
