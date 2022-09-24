@@ -88,6 +88,71 @@ document.getElementById('previous_page').addEventListener('click', (event) => {
 let element_images = document.getElementById('images');
 pages.unshift(pages.shift());
 
+var food, item;
 
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+food = ['egg', 'milk', 'bread'];
+let element_start = document.getElementById('start');
+food.forEach((item) => {
+  let new_li = document.createElement('li');
+  new_li.innerText = item;
+  let new_span = document.createElement('span');
+  let new_button = document.createElement('button');
+  new_button.innerText = 'Add';
+  new_button.setAttribute("id", item);
+
+  new_span.appendChild(new_button);
+
+  new_li.appendChild(new_span);
+
+  element_start.appendChild(new_li);
+});
+
+
+document.getElementById('egg').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  let new_li2 = document.createElement('li');
+  new_li2.innerText = 'egg';
+
+  element_list.appendChild(new_li2);
+
+});
+
+document.getElementById('milk').addEventListener('click', (event) => {
+  let element_list2 = document.getElementById('list');
+  let new_li3 = document.createElement('li');
+  new_li3.innerText = 'milk';
+
+  element_list2.appendChild(new_li3);
+
+});
+
+document.getElementById('bread').addEventListener('click', (event) => {
+  let element_list3 = document.getElementById('list');
+  let new_li4 = document.createElement('li');
+  new_li4.innerText = 'bread';
+
+  element_list3.appendChild(new_li4);
+
+});
+
+document.getElementById('add').addEventListener('click', (event) => {
+  let element_list4 = document.getElementById('list');
+  let new_li5 = document.createElement('li');
+  new_li5.innerText = getNumberOrString(document.getElementById('text').value);
+
+  element_list4.appendChild(new_li5);
+
+});
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
