@@ -63,6 +63,30 @@ test("There is at least one image", () => {
 test("There are at least 500 words on the page", () => {
   expect(getWords.length).toBeGreaterThanOrEqual(500);
 });
+var images, pages;
+
+
+pages = ['Once upon a time there lived a lion in a forest. One day after a heavy meal. It was sleeping under a tree. After a while, there came a mouse and it started to play on the lion.', 'Suddenly the lion got up with anger and looked for those who disturbed its nice sleep. Then it saw a small mouse standing trembling with fear. ', 'The lion jumped on it and started to kill it. The mouse requested the lion to forgive it. The lion felt pity and left it. The mouse ran away.', 'On another day, the lion was caught in a net by a hunter. The mouse came there and cut the net. Thus it escaped. There after, the mouse and the lion became friends. They lived happily in the forest afterwards.'];
+images = [null, null, null];
+
+images = 0;
+
+
+document.getElementById('next_page').addEventListener('click', (event) => {
+  let element_story = document.getElementById('story');
+  pages.push(pages[0]);
+  element_story.innerText = pages.shift();
+
+});
+
+document.getElementById('previous_page').addEventListener('click', (event) => {
+  let element_story2 = document.getElementById('story');
+  pages.unshift(pages.slice(-1)[0]);
+  element_story2.innerText = pages.pop();
+
+});
+let element_images = document.getElementById('images');
+pages.unshift(pages.shift());
 
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
