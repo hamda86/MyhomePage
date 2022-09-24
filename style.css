@@ -23,6 +23,13 @@ html,
     margin: 4px;
 }
 
+ header {
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.25em;
+    text-align: center;
+  }
+
 .image {
  align: center;
    width:400px;
