@@ -63,7 +63,6 @@ test("There is at least one image", () => {
 test("There are at least 500 words on the page", () => {
   expect(getWords.length).toBeGreaterThanOrEqual(500);
 });
-
 var food, item;
 
 function getNumberOrString(value) {
@@ -132,6 +131,7 @@ document.getElementById('add').addEventListener('click', (event) => {
   element_list4.appendChild(new_li5);
 
 });
+
 var images, pages;
 
 
