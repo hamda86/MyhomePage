@@ -157,5 +157,30 @@ document.getElementById('previous_page').addEventListener('click', (event) => {
 let element_images = document.getElementById('images');
 pages.unshift(pages.shift());
 
+var img;
+
+// Describe this function...
+function forward() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+}
+
+
+img = ['https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662__480.jpg', 'https://i0.wp.com/thrive50plus.com/wp-content/uploads/2021/12/what-do-you-need-for-your-new-kitten-pet-life-t.jpeg?fit=750%2C500&ssl=1', 'https://i.pinimg.com/originals/af/78/3c/af783c232a225adb7c18e11b3dd57b0d.jpg'];
+
+
+document.getElementById('next').addEventListener('click', (event) => {
+  let element_images = document.getElementById('images');
+  img.push(img[0]);
+  element_images.setAttribute("src", img.shift());
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_images2 = document.getElementById('images');
+  img.unshift(img.slice(-1)[0]);
+  element_images2.setAttribute("src", img.pop());
+
+});
+
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
