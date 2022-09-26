@@ -90,6 +90,9 @@ h2{
 .center{
   text-align: left;
 }
+#cats{
+  text-align: left;
+}
   footer {
     background-color: #09A7A1;
     color: white;
