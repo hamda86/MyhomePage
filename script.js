@@ -153,5 +153,4 @@ document.getElementById('previous').addEventListener('click', (event) => {
 
 });
 
-const console = document.getElementById("tests");
-prettify.toHTML(run(), console);
+
