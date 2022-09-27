@@ -50,7 +50,6 @@ function getNumberOrString(value) {
 food = ['egg', 'milk', 'bread'];
 let element_start = document.getElementById('start');
 food.forEach((item) => {
-  element_start.style.backgroundColor = '#ffffff';
   let new_li = document.createElement('li');
   new_li.innerText = item;
   let new_span = document.createElement('span');
@@ -102,7 +101,6 @@ document.getElementById('add').addEventListener('click', (event) => {
   element_list4.appendChild(new_li5);
 
 });
-
 var images, pages;
 
 
@@ -154,3 +152,8 @@ document.getElementById('previous').addEventListener('click', (event) => {
 });
 
 
+
+document.getElementById('feedback').addEventListener('click', (event) => {
+  event.target.style.backgroundColor = '#ffff66';
+
+});
