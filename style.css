@@ -108,17 +108,3 @@ h2{
   background: var(--color-pass);
 }
 .jest-lite-report__errors { display:none }
-
-
-
-
-
-
-
-
-
-/* don't edit this */
-.jest-lite-report__status--pass {
-  background: var(--color-pass);
-}
-.jest-lite-report__errors { display:none }
