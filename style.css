@@ -23,13 +23,6 @@ html,
     margin: 4px;
 }
 
- header {
-    background-color: #09A7A1;
-    color: white;
-    padding: 0.25em;
-    text-align: center;
-  }
-
 .image {
  align: center;
    width:400px;
@@ -45,9 +38,24 @@ html,
    width:560px;
    height:315px;
   margin: auto;
-  border: 5px solid #555;
-  
+  border: 5px solid #555; 
 }
+#start{
+  background-color:#FFFFFF;
+}
+#list{
+  background-color:#FFFFFF;
+}
+
+.center{
+  text-align: left;
+}
+  header {
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.25em;
+    text-align: center;
+  }
 
 .menu {
   list-style-type: none;
@@ -58,10 +66,6 @@ html,
 }
 
 .menu2 {
-  float: left;
-}
-
-li {
   float: left;
 }
 
@@ -81,19 +85,7 @@ h2{
   text-align: center;
   padding: 0.5em;
 }
-#start{
-  background-color:#FFFFFF;
-}
-#list{
-  background-color:#FFFFFF;
-}
 
-.center{
-  text-align: left;
-}
-#cats{
-  text-align: left;
-}
   footer {
     background-color: #09A7A1;
     color: white;
@@ -102,6 +94,20 @@ h2{
   }
 
 
+
+
+
+
+
+
+
+
+
+/* don't edit this */
+.jest-lite-report__status--pass {
+  background: var(--color-pass);
+}
+.jest-lite-report__errors { display:none }
 
 
 
