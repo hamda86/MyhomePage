@@ -157,3 +157,5 @@ document.getElementById('feedback').addEventListener('click', (event) => {
   event.target.style.backgroundColor = '#ffff66';
 
 });
+const console = document.getElementById("tests");
+prettify.toHTML(run(), console);
